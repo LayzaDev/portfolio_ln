@@ -4,7 +4,7 @@ function openWhatsApp() {
   let message = document.querySelector("#messageField").value;
   let phoneNumber = "+5534988273701";
 
-  let enviar = `${name} - ${occupation} \n${message}`;
+  let enviar = `${name} | ${occupation} \n\n${message}`;
 
   let whatsappLink = `https://wa.me/${phoneNumber}/?text=${encodeURIComponent(
     enviar
