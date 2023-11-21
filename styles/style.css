@@ -56,7 +56,7 @@ body {
   gap: 40px;
 }
 
-.container_content_title
+.container_content_title,
 .container_content_form_title{
   font-size: 2.5rem;
   font-family: var(--primary-font);
@@ -189,10 +189,6 @@ body {
   width: 25rem;
 }
 
-.container_content_form_title{
-  padding-left: 8rem;
-}
-
 .inputs,
 .button,
 .textArea{
@@ -255,7 +251,7 @@ body {
   font-family: var(--secondary-font);
 }
 
-
+/*
 @media (max-width: 720px){
 
   .header {
@@ -355,7 +351,7 @@ body {
     margin-top: 15px;
   }
 }
-
+*/
 @media (max-width: 1200px){
   .header {
     margin-top: 10px;
