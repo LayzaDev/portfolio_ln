@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Playfair+Display:wght@400;600&display=swap");
 
 :root {
   --primary-color: #40403e;
   --secondary-color:#f5410a ;
-
-/**/
   --terciary-color: #fff4f4;
   --quaternary-color: #f7e6c4;
   --hover-color: #23272c;
 
   --primary-font: font-family: 'Krona One', sans-serif;
   --secondary-font: font-family: 'Montserrat', sans-serif;
+  --terciary-font: font-family: 'Playfair Display', serif;
 }
 
 * {
@@ -57,7 +56,8 @@ body {
   gap: 40px;
 }
 
-.container_content_title{
+.container_content_title
+.container_content_form_title{
   font-size: 2.5rem;
   font-family: var(--primary-font);
 }
@@ -91,7 +91,7 @@ body {
 
 .container_links_subtitle{
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   font-family: var(--primary-font);
 }
 
@@ -124,8 +124,8 @@ body {
   width: 50%;
   border-radius: 8px;
   box-shadow: 1px 1px 2px 2px var(--hover-color);
-  border:  2px solid var(--secondary-color);
-
+  border:  3px solid var(--secondary-color);
+  margin-top: 20px;
 }
 
 /*------------------- Skills -------------------*/
@@ -133,6 +133,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem;
+
 }
 
 .soft_skills {
@@ -180,13 +181,16 @@ body {
   padding: 20px 0 5px 0;
   font-size: 20px;
   font-family: var(--primary-font);
-
 }
 
 .container_content_form {
   display: flex;
   flex-direction: column;
   width: 25rem;
+}
+
+.container_content_form_title{
+  padding-left: 8rem;
 }
 
 .inputs,
@@ -212,7 +216,6 @@ body {
   outline: none;
 }
 
-
 .button {
   margin-top: 20px;
   background-color: var(--secondary-color);
@@ -226,7 +229,6 @@ body {
   background-color:#D53A0A;
 }
 
-/*------------------- Footer -------------------*/
 .footer{
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -241,46 +243,203 @@ body {
   align-items: center;
 }
 
+.talentos{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--terciary-font);
+}
 
-@media (max-width: 1200px){
+.talentos span {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: var(--secondary-font);
+}
+
+
+@media (max-width: 720px){
+
   .header {
-    padding: 10%;
-  }
-
-  .header_menu {
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .container {
-    flex-direction: column-reverse;
+    margin-top: 15px;
     padding: 5%;
   }
 
-  .container_content {
-    width: auto;
-    gap: 25px;
-    align-items: center;
-  }
-
-  .container_content_title{
-    padding: 0;
-  }
-
-  .container_content_text{
+  .header_menu_links {
     font-size: 1rem;
   }
 
-  .soft_skills {
-    padding-right: 3rem ;
+  .container{
+    padding: 0px;
+    gap: 40px
   }
 
-  .hard_skills {
-    padding-left: 3rem;
+  .container_content_title, 
+  .container_content_form_title{
+    font-size: 1.5rem;
+  }
+
+  .container_content_text{
+    font-size: 0.5rem;
+    margin: 15px;
+  }
+
+  .container_links {
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container_links_subtitle{
+    font-size: 1rem;
+    margin-bottom: 15px;
   }
 
   .container_links_navigation {
-    width: 5rem;
+    padding: 20px 60px;
+  }
+
+  .container_content_skills {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .soft_skills {
+    padding-left: 3rem ;
+  }
+
+  .hard_skills {
+    padding-right: 3rem;
+  }
+
+  .header_skills{
+    padding: 1rem;
+    font-size: 1.75rem;
+  }
+
+  .subtitle_skills{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+  }
+
+  .inputs,
+  .button,
+  .textArea{
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .container_content_form_title{
+    padding-left: 6rem;
+  } 
+  .container_content_form label{
+    font-size: 1rem;
+  }
+
+  .talentos{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--terciary-font);
+  }
+
+  .talentos span {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: var(--secondary-font);
+  }
+
+  .footer{
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1200px){
+  .header {
+    margin-top: 10px;
+    padding: 5%;
+  }
+
+  .header_menu_links {
+    font-size: 1.5rem;
+  }
+
+  .container{
+    gap: 50px
+  }
+
+  .container_content_title, 
+  .container_content_form_title{
+    font-size: 2rem;
+  }
+
+  .container_content_text{
+    font-size: 1.2rem;
+  }
+
+  .container_links {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .container_links_subtitle{
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .container_links_navigation {
+    padding: 21px 70px;
+  }
+
+  .soft_skills {
+    padding-left: 3rem ;
+  }
+
+  .hard_skills {
+    padding-right: 3rem;
+  }
+
+  .header_skills{
+    padding: 1rem;
+    font-size: 1.75rem;
+  }
+
+  .subtitle_skills{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+  }
+
+  .inputs,
+  .button,
+  .textArea{
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .container_content_form label{
+    font-size: 1.2rem;
+  }
+
+  .talentos{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--terciary-font);
+  }
+
+  .talentos span {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: var(--secondary-font);
+  }
+
+  .footer{
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 15px;
   }
 }
 
