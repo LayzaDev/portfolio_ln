@@ -13,7 +13,6 @@ function openWhatsApp() {
   window.open(whatsappLink);
 }
 
-document.getElementById("form").addEventListener("submit", (event) => {
-  event.preventDefault();
+document.getElementById("form").addEventListener("submit", () => {
   openWhatsApp();
 });
